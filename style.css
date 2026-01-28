@@ -1,0 +1,96 @@
+body {
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.carousel-inner {
+  height: 30vh;
+  margin: 0;
+  padding: 5px;
+}
+
+.d-block {
+  height: 30vh;
+  object-fit: cover;
+  /* This fits the img of cover fully to cover without getting image distorted  */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  /* If screen is large → 3 cards . If medium → 2 cards . If small → 1 card */
+}
+
+.items {
+  margin: 60px auto;
+  /* auto centers the card horizonatally automatically  */
+  margin-top: 60px;
+  padding: 20px;
+  max-width: 450px;
+  /* this creates a max width for the card to 450pc after that it automatically adjust duw to width 100%  */
+  width: 100%;
+  border: 2px solid rgb(173, 114, 2);
+  background-color: #13c394;
+  border-radius: 10px;
+  color: rgb(4, 1, 79);
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* Always use %,vh,auto for mobile responsiveness  */
+}
+
+.Watch {
+  width: 100%;
+  padding: 4px;
+  border-radius: 10px;
+  border: none;
+  background-color: #090979;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #020202;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .items {
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
